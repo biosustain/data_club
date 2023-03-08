@@ -14,6 +14,9 @@ You will find:
 ## Goals of the Club
 
 —> Forster a community
+
 —> Create a forum for discussion and solving questions
+
 —> Find the right people to help
+
 —> Learn from each other and share knowledge about data
