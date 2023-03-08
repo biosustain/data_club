@@ -50,5 +50,7 @@ Analytics for understanding and predicting (December)
 ## Organisers
 
 Alberto Santos -- albsad@biosustain.dtu.dk
+
 Teddy Groves -- tedgro@biosustain.dtu.dk
+
 CfB Partnerships & Research Office (PRO) -- Sünje Johanna Pamp -- sjpa@biosustain.dtu.dk
