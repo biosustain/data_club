@@ -37,7 +37,9 @@ You will find:
 
 Data literacy – what is it? (March)
 
-Data wrangling (May)
+Data wrangling (May) -- 
+  - [Notebooks](https://github.com/biosustain/data_club/tree/main/notebooks/data_wrangling)
+  - [Slides](https://github.com/biosustain/data_club/blob/main/slides/2_data_wrangling.pdf)
 
 Data visualization (July/August)
 
