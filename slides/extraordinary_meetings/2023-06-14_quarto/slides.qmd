@@ -1,0 +1,190 @@
+---
+title: "Why I like Quarto"
+subtitle: "Extraordinary data club meeting"
+author: Teddy Groves
+date: 2023-06-14
+bibliography: bibliography.bib
+csl: ieee.csl
+format:
+  beamer:
+    include-in-header:
+      text: |
+        \linespread{1.5}\selectfont
+        \setbeamertemplate{itemize item}{$\rightarrow$}
+    aspectratio: 169
+    colortheme: seahorse
+    linkcolor: magenta
+  html:
+    embed-resources: true
+  ipynb:
+    default
+---
+
+# What is quarto?
+
+
+[Quarto](quarto.org) is an app for writing scientific and technical documents.
+
+\phantom{}
+
+Quarto is inspired by Rmarkdown: it works nicely with documents that contain
+Python, R or Julia code.
+
+\phantom{}
+
+::: {.columns}
+::: {.column width=60%}
+I used quarto to make this presentation!
+
+:::
+::: {.column width=40%}
+
+![](./img/quarto.png)
+
+:::
+:::
+
+
+# General idea
+
+Write Markdown, use quarto to generate:
+
+* Document (`.pdf`, `.doc`, `.tex`, `.epub`)
+* Presentation (beamer, `.ppt`, revealjs)
+* Jupyter notebook
+* Website
+* Book
+
+# Command line workflow
+
+1. Create `my_document.qmd` 
+2. Run `quarto preview my_document.qmd` (and leave it running).
+3. Edit document, see live-updated output.
+4. Run `quarto render my_document.qmd` to put document in a range of formats.
+
+[Here](https://quarto.org/docs/get-started/hello/text-editor.html) is a detailed guide.
+
+You can also go through these steps without leaving your editing
+environment. Here are guides for doing this using [VS
+code](https://quarto.org/docs/get-started/hello/vscode.html),
+[JupyterLab](https://quarto.org/docs/get-started/hello/jupyter.html), [R
+Studio](https://quarto.org/docs/get-started/hello/rstudio.html) and
+[neovim](https://quarto.org/docs/get-started/hello/neovim.html).
+
+# How to install quarto
+
+1. [Download the app](https://quarto.org/docs/get-started/).
+2. Set up editor integration if desired.
+3. Make sure you have Jupyter (for Python/Julia) and/or knitr (for R).
+
+# How quarto Works
+
+![](./img/qmd-how-it-works.png)
+
+# Things I like about quarto
+
+::: {.columns}
+:::: {.column width=50%}
+
+## Convenience
+* Editor integration is good.
+* Defaults look OK.
+* One tool that does a lot of things.
+
+## Collaboration
+
+* Works on everyone's setup
+* Easy to send round HMTL, `.doc` etc.
+
+::::
+:::: {.column width=50%}
+
+## Pandoc markdown
+* Markdown is easy and popular.
+* \LaTeX can be used where needed.
+* Footnotes^[Like this one.], citations @deleeuwOmicsDataSampling2023 etc work.
+
+## Plain text
+
+* Git works.
+* Easy to copy.
+* Can use editor/language server etc.
+
+::::
+:::
+
+# Code example
+::: {.columns}
+::: {.column width=55%}
+
+```{.python} 
+import numpy as np
+import matplotlib.pyplot as plt
+r = np.arange(0, 2, 0.01)
+theta = 2 * np.pi * r
+ax = plt.subplot(projection="polar")
+ax.plot(theta, r)
+```
+:::
+::: {.column width=45%}
+
+```{python} 
+#| echo: false
+#| output: true
+
+import numpy as np
+import matplotlib.pyplot as plt
+r = np.arange(0, 2, 0.01)
+theta = 2 * np.pi * r
+ax = plt.subplot(projection="polar")
+ax.plot(theta, r)
+```
+:::
+:::
+
+# Limitations
+
+* Doesn't support non Python/R/Julia code execution.
+* Runs locally: everyone can't edit the same document at once.
+* Bring your own spelling/grammar checker.
+* REPL integration requires separate setup.
+* Relatively new.
+
+# Alternatives
+
+::: {.columns}
+::: {.column width=50%}
+
+## Latex/overleaf 
+* Latex is fiddly.
+* What if a `.doc` is needed?
+* Code is a pain.
+
+## Word/Google doc
+
+* Bad for equations and figures.
+* Code is a pain.
+* A different window.
+
+:::
+::: {.column width=50%}
+
+## Jupyter + nbconvert
+
+* Doesn't work with all editors.
+* Citations, footnotes etc.
+* Hard to version control.
+
+## Plain Pandoc
+
+* Have to write Makefiles and filters.
+
+## Org mode
+
+* Everyone has to use Emacs.
+* Working with code is fiddly and slow.
+
+:::
+:::
+
+# References
