@@ -41,7 +41,8 @@ Data wrangling (May) --
   - [Notebooks](https://github.com/biosustain/data_club/tree/main/notebooks/data_wrangling)
   - [Slides](https://github.com/biosustain/data_club/blob/main/slides/2_data_wrangling.pdf)
 
-Data visualization (July/August)
+Data visualization (July/August) --
+- [Notebooks](https://github.com/biosustain/data_club/tree/main/notebooks/visualisation_with_matplotlib)
 
 Tools (September)
 
