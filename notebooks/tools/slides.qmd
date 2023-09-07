@@ -18,6 +18,8 @@ Not covered but worth learning about:
 - ssh
 - containers
 
+We'll also mostly stick to Python.
+
 # Templates
 
 [cookiecutter](https://pypi.org/project/cookiecutter/) is an application that
