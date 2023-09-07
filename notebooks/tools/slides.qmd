@@ -30,7 +30,7 @@ It's pretty easy to make your own cookiecutter.
 
 # Templates
 
-Some good cookiecutters (you can also search GitHub for "cookiecutter <topic>"):
+Some good cookiecutters (you can also search GitHub for "cookiecutter [TOPIC]"):
 
 [cookiecutter-data-science](https://github.com/drivendata/cookiecutter-data-science) is a skeleton data science project.
 
