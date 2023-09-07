@@ -1,0 +1,98 @@
+---
+title: Useful Software tools for data science
+subtitle: Data club episode 4
+format:
+  html: default
+---
+
+There are too many useful tools to cover in one session!
+
+Not covered but worth learning about:
+
+- editor/ide/lsp 
+- shell
+- tmux
+- tools for testing and test orchestration
+- git, git-based development workflows, social networks for git repos
+- debuggers
+- ssh
+- containers
+
+# Templates
+
+[cookiecutter](https://pypi.org/project/cookiecutter/) is an application that
+lets you easily download a custom template to start your project with.
+
+This is usually better than starting from scratch, especially for activating
+and configuring other tools. 
+
+It's pretty easy to make your own cookiecutter.
+
+# Templates
+
+Some good cookiecutters (you can also search GitHub for "cookiecutter <topic>"):
+
+[cookiecutter-data-science](https://github.com/drivendata/cookiecutter-data-science) is a skeleton data science project.
+
+[cookiecutter-hypermodern-python](https://github.com/cjolowicz/cookiecutter-hypermodern-python) is a template for a Python package that uses recent tooling and conventions. 
+
+[cookiecutter-pypackage](https://github.com/audreyfeldroy/cookiecutter-pypackage) is a more traditional Python package template.
+
+[cookiecutter-cms](https://github.com/MolSSI/cookiecutter-cms) is a template that specifically targets computational molecuar science
+
+[bibat](https://bibat.readthedocs.io/en/latest/) is a template for Bayesian statistical analysis projects.
+
+# Environment management
+
+This is a big sore point in the Python world: none of the options are perfect!
+
+[pyenv](https://github.com/pyenv/pyenv) is a useful tool for installing and managing Python versions.
+
+[venv](https://docs.python.org/3/library/venv.html) is the built-in way of
+handling Python virtual environments.
+
+[poetry](https://python-poetry.org/), [pipenv](https://pipenv.pypa.io/en/latest/) and [pdm](https://pdm.fming.dev/latest/) are Python dependency managers
+
+[conda](https://docs.conda.io/en/latest/) is a package management system that
+aims to address all your scientific programming needs, in Python and beyond.
+
+[pixi](https://prefix.dev/docs/pixi/overview) is a new alternative interface
+for installing conda packages (and soon also packages from PyPI).
+
+# Automatic code checking and formatting
+
+[isort](https://pre-commit.com/) checks that your Python imports are idiomatic.
+
+[ruff](https://beta.ruff.rs/docs/) checks for and can sometimes correct common Python mistakes.
+
+[black](https://github.com/psf/black) formats your code: never worry about indentation again!
+
+[pre-commit](https://pre-commit.com/) runs your checkers and formatters as pre-commit hooks.
+
+# Documentation
+
+[Sphinx](https://www.sphinx-doc.org/en/master/) is the de facto standard for
+documenting Python projects.
+
+[MyST](https://myst-parser.readthedocs.io/en/v0.15.1/sphinx/intro.html) lets
+you write Sphinx documentation in Markdown instead of reStructuredText.
+
+[readthedocs](https://about.readthedocs.com/?ref=readthedocs.org) builds and
+hosts your documentation for free.
+
+# Streamlit
+
+[Streamlit](https://streamlit.io/) makes it easy to share data science work
+online using a minimal, script-oriented Python webapp framework.
+
+Best feature: Streamlit will deploy and host your webapp for free.
+
+Try it yourself:
+
+```{.sh} 
+(venv) > pip install streamlit
+(venv) > streamlit hello
+```
+
+Check out the [example](ADD LINK)
+
