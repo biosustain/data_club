@@ -1,10 +1,14 @@
-import altair as alt
-import streamlit as st
-import pandas as pd
-from matplotlib.dates import DateFormatter
-import matplotlib.pyplot as plt
+from pathlib import Path
 
-transcriptome_df = pd.read_csv("transcriptome_data.csv", index_col=False)
+import altair as alt
+import matplotlib.pyplot as plt
+import pandas as pd
+import streamlit as st
+from matplotlib.dates import DateFormatter
+
+HERE = Path(__file__).parent.absolute()
+
+transcriptome_df = pd.read_csv(HERE / "transcriptome_data.csv", index_col=False)
 times = [float(s[:-4]) * 3600 for s in transcriptome_df.columns if s != "mRNA"]
 transcriptome_df.columns = ["mRNA"] + times
 
@@ -24,11 +28,7 @@ st.write(f"Here is the data for mRNA {mrna}:", mrna_df)
 f, ax = plt.subplots()
 for _, row in mrna_df.iterrows():
     ax.plot(times, row.values, marker="x", linestyle="dotted", linewidth=1)
-    ax.set(
-        title=f"Timecourse for mRNA {mrna}",
-        xlabel="Time",
-        ylabel="Measurement"
-    )
+    ax.set(title=f"Timecourse for mRNA {mrna}", xlabel="Time", ylabel="Measurement")
     ax.xaxis.set_major_formatter(DateFormatter("%H:%m"))
 st.write("Here is a matplotlib plot of this data:")
 st.pyplot(f)
@@ -45,7 +45,7 @@ st.write(
 prefixes = transcriptome_df["mRNA"].str.extract(r"([^\d]*)")[0]
 prefix = st.selectbox(
     "Choose a prefix i.e. the start of the mRNA's name up to the first digit:",
-    prefixes.unique()
+    prefixes.unique(),
 )
 prefix_df = (
     transcriptome_df
@@ -57,9 +57,8 @@ prefix_df = (
 chart = (
     alt.Chart(prefix_df)
     # next line tells altair to make a line plot with circles at the points
-    .mark_line(point=alt.OverlayMarkDef(filled=False, fill='white'))
+    .mark_line(point=alt.OverlayMarkDef(filled=False, fill="white"))
     # indicate which columns are for axes and which for colour and tooltip text
     .encode(x="time", y="measurement", color=alt.Color("mRNA", legend=None))
 )
 st.altair_chart(chart, use_container_width=True)
-
