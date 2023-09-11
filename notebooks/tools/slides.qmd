@@ -10,9 +10,9 @@ format:
     center: false
 ---
 
-# Introduction 
+# Introduction
 
-## Recap 
+## Recap
 
 We are building a data science product together.
 
@@ -37,7 +37,7 @@ science with Python.
 
 ## These tools are very important, but we won't cover them!
 
-- editor, IDE, LSP 
+- editor, IDE, LSP
 - shell, tmux, ssh
 - testing, test orchestration
 - git, git workflows, social networks for git repos
@@ -72,7 +72,7 @@ Cli:
 
 Python interface:
 
-```{.python} 
+```{.python}
 from cookiecutter.main import cookiecutter
 cookiecutter('my-local-cookiecutter-template')
 ```
@@ -83,7 +83,7 @@ cookiecutter('my-local-cookiecutter-template')
 is a skeleton data science project.
 
 [cookiecutter-hypermodern-python](https://github.com/cjolowicz/cookiecutter-hypermodern-python)
-is a template for a Python package that uses recent tooling and conventions. 
+is a template for a Python package that uses recent tooling and conventions.
 
 [cookiecutter-pypackage](https://github.com/audreyfeldroy/cookiecutter-pypackage)
 is a more traditional Python package template.
@@ -160,10 +160,11 @@ Best feature: Streamlit will deploy and host your webapp for free.
 
 Try it yourself:
 
-```{.sh} 
+```{.sh}
 (venv) > pip install streamlit
 (venv) > streamlit hello
 ```
 
-Check out the [example](ADD LINK)
+We made an example streamlit app!
 
+Try it [here](https://biosustain-dataclub-example-app.streamlit.app/), or read the [source code](https://github.com/biosustain/data_club/tree/main/notebooks/tools/streamlit_app.py).
