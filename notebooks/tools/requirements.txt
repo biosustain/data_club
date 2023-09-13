@@ -1,0 +1,3 @@
+altair
+matplotlib
+pandas
