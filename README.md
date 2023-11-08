@@ -47,6 +47,8 @@ Data visualization (July/August) --
 Tools (September)
 
 Making use of publicly available data and databases (November)
+  - [Notebooks](https://github.com/biosustain/data_club/tree/main/notebooks/data_annotation)
+  - [Slides](https://github.com/biosustain/data_club/blob/main/slides/5_data_annotation.pdf)
 
 Analytics for understanding and predicting (December)
 
