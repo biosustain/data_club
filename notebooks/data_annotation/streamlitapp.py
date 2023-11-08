@@ -11,7 +11,7 @@ from uniprot_api import get_accession, get_protein_info, extract_protein_info
 # Reading data in
 data_dir = "../../data"
 
-transcriptome_df = pd.read_csv(os.path.join(data_dir, "trasncriptomics.tsv"), sep='\t', index_col=False)
+transcriptome_df = pd.read_csv(os.path.join(data_dir, "transcriptomics.tsv"), sep='\t', index_col=False)
 proteome_df = pd.read_csv(os.path.join(data_dir,"proteomics.tsv"), sep='\t', index_col=False)
 
 times = [float(s.split(" ")[0]) for s in transcriptome_df.columns if s != "mRNA"]
