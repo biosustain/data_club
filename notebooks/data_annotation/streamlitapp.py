@@ -6,7 +6,7 @@ import pandas as pd
 import streamlit as st
 from matplotlib.dates import DateFormatter
 
-from uniprot_api import get_accession, get_protein_info, extract_protein_info
+from uniprot_api import get_protein_info, extract_protein_info
 
 # Reading data in
 data_dir = "../../data"
