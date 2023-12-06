@@ -10,6 +10,7 @@ You will find:
 - Data and data science releated presentations
 - Code to explore, analyse and mine data
 - Relevant links to data-related topics
+- [A list of software tools](https://github.com/biosustain/data_club/blob/main/useful_tools.md) that we find useful for data science
 
 ## Goals of the Club
 
@@ -37,7 +38,7 @@ You will find:
 
 Data literacy – what is it? (March)
 
-Data wrangling (May) -- 
+Data wrangling (May) --
   - [Notebooks](https://github.com/biosustain/data_club/tree/main/notebooks/data_wrangling)
   - [Slides](https://github.com/biosustain/data_club/blob/main/slides/2_data_wrangling.pdf)
 
