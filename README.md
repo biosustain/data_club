@@ -46,6 +46,7 @@ Data visualization (July/August) --
 - [Notebooks](https://github.com/biosustain/data_club/tree/main/notebooks/visualisation_with_matplotlib)
 
 Tools (September)
+  - [Slides](https://github.com/biosustain/data_club/blob/main/notebooks/tools/slides.html)
 
 Making use of publicly available data and databases (November)
   - [Notebooks](https://github.com/biosustain/data_club/tree/main/notebooks/data_annotation)
